@@ -34,6 +34,7 @@ models:
     # Config indicated by + and applies to all files under models/example/
     bronze:
       +materialized: view
+      +schema: bronze
     silver:
       +materialized: table
       +schema: silver
