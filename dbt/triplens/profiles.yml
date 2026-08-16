@@ -1,0 +1,14 @@
+triplens:
+  outputs:
+    dev:
+      account: "{{ env_var('SNOW_ACCOUNT') }}"
+      database: triplens
+      password: "{{ env_var('SNOW_PASSWORD') }}"
+      role: ACCOUNTADMIN
+      schema: raw
+      threads: 2
+      type: snowflake
+      user: "{{ env_var('SNOW_USER') }}"
+      warehouse: COMPUTE_WH
+
+  target: dev
