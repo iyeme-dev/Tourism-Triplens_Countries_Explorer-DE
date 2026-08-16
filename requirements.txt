@@ -1,3 +1,4 @@
 requests==2.34.2
 python-dotenv==1.2.2
 boto3==1.43.39
+snowflake-connector-python==4.6.0
