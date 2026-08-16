@@ -1,0 +1,7 @@
+sources:
+  - name: triplens
+    description: "Information about different countries of the world"
+    database: triplens
+    schema: raw
+    tables:
+      - name: countries_raw
