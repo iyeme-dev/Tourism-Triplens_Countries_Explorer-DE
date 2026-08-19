@@ -4,23 +4,19 @@ volumes:
 
 networks:
   triplens:
+  airflow:
 
 services:
   minio:
     image: minio/minio:RELEASE.2025-07-18T21-56-31Z-cpuv1
-    container_name: minio
+    container_name: minio_astro
 
-    environment:
-      MINIO_ROOT_USER: ${MINIO_ROOT_USER:-adminadmin}
-      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:-12345678}
-
-    ports:
-      - "9000:9000"
-      - "9001:9001"
-
-    restart: unless-stopped
     env_file:
       - .env
+
+    ports:
+      - "9100:9000"
+      - "9101:9001"
 
     command: server /data --console-address ":9001"
 
@@ -30,3 +26,4 @@ services:
 
     networks:
       - triplens
+      - airflow
