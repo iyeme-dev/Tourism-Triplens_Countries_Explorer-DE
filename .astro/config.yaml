@@ -1,0 +1,4 @@
+project:
+    name: tourism-triplens-countries-explorer-de
+postgres:
+    port: 5436

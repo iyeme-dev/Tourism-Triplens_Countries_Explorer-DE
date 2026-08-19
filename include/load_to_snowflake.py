@@ -31,7 +31,7 @@ snow_cursor = snow_auth.cursor()
 
 client = boto3.client(
     's3',
-    endpoint_url='http://localhost:9000',
+    endpoint_url='http://minio:9000',
     aws_access_key_id=access_key,
     aws_secret_access_key=secret_key,
     config=boto3.session.Config(signature_version='s3v4'),

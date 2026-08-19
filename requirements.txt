@@ -2,3 +2,6 @@ requests==2.34.2
 python-dotenv==1.2.2
 boto3==1.43.39
 snowflake-connector-python==4.6.0
+astronomer-cosmos==1.15.0
+dbt-snowflake==1.12.0
+apache-airflow-providers-snowflake==6.15.0
